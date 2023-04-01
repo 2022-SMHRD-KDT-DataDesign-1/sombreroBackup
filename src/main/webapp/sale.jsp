@@ -1,16 +1,14 @@
 <%@page import="com.som.model.UsersVO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <link rel="stylesheet" type="text/css" href="./css/sale.css">
-
 </head>
 <body>
-
 	<%
 		UsersVO login_vo = (UsersVO)session.getAttribute("login_vo");
 		if(login_vo == null){
@@ -169,6 +167,8 @@
 							value="팔기 신청 완료"></td>
 					</tr>
 
+
+
 				</table>
 			</form>
 		</div>
@@ -178,6 +178,9 @@
 	<footer>
 		<jsp:include page="./common/footer.jsp" />
 	</footer>
+
+
+	<script src="js/main.js"></script>
 
 	<script src="./js/sale.js" type="text/javascript"></script>
 </body>
