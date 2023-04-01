@@ -32,7 +32,7 @@
 <!--===============================================================================================-->
 
 </head>
-<body class="animsition">
+<body>
 	<!-- Header -->
     <header>
         <jsp:include page="./common/header.jsp"/>

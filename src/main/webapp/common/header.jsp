@@ -95,6 +95,9 @@
 						<a href="admin.jsp" class="flex-c-m trans-04 p-lr-25">
 							관리자페이지
 						</a>
+						<a href="return.jsp" class="flex-c-m trans-04 p-lr-25">
+							반납관리	
+						</a>
 						<%}%>
 						<a href="contact.jsp" class="flex-c-m trans-04 p-lr-25">
 							문의게시판
@@ -126,11 +129,11 @@
 					<div class="menu-desktop">
 						<ul class="main-menu">
 
-							<li>
+							<li class="label1" data-label1="Rental">
 								<a href="product.jsp">상품대여</a>
 							</li>
 
-							<li class="label1" data-label1="hot">
+							<li>
 								<a href="shopping-cart.jsp">장바구니</a>
 							</li>
 
@@ -139,7 +142,7 @@
 							</li>
 
 
-							<li>
+							<li class="label1" data-label1="Sell">
 								<a href="sale.jsp">상품매매</a>
 							</li>
 							

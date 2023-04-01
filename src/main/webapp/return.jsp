@@ -66,6 +66,6 @@
 </footer>
 
 <script src="./js/return.js" type="text/javascript"></script>
-
+	<script src="js/main.js"></script>
 </body>
 </html>

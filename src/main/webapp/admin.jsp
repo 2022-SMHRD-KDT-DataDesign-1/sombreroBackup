@@ -137,6 +137,7 @@
 					<td><%=list.get(i).getUser_id()%></td>
 					<td><%=list.get(i).getUser_name()%></td>
 					<td><select name="user_status" class="setStatus">
+							<option>선택</option>
 							<option>입금완료</option>
 							<option>대여완료</option>
 							<option>반납진행</option>

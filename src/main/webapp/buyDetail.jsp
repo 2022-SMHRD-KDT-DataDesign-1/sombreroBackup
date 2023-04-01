@@ -38,7 +38,7 @@
 </head>
 <body>
 
-<body class="animsition">
+<body>
 	
 	
 	
