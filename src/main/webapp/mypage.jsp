@@ -9,6 +9,7 @@
 <%@page import="com.som.model.mypageVO"%>
 <%@page import="java.util.List"%>
 <%@page import="com.som.model.mypageDAO"%>
+<%@ include file="./common/header.jsp" %> 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -19,13 +20,11 @@
 <link rel="stylesheet" type="text/css" href="css/mypage.css">
 </head>
 <body>
+	<%System.out.println("ccccczsfzdvXDfgvbdfbxvbzdved1111"); %>
 	
 	<%
-	// 세션 값 가져오기
-	UsersVO login_vo = (UsersVO)session.getAttribute("login_vo");
-	int user_seq = login_vo.getUser_seq();
-	
 	// 상태 가져오기
+	System.out.println("mapage" + login_vo);
 	mypageDAO m_dao = new mypageDAO();
 	String user_status = m_dao.showUserStatus(user_seq);
 	// String user_status = login_vo.getUser_status();
@@ -61,7 +60,7 @@
 				<div id="userDiv">
 					<div id="hiUser">
 						<div id="writeUser">
-							<span id="hiSpan">안녕하세요, <strong><%=login_vo.getUser_name()%></strong>님<br>오늘도
+							<span id="hiSpan">안녕하세요, <strong><%=user_nick%></strong>님<br>오늘도
 								현명한 하루 되세요!
 							</span>
 						</div>
@@ -107,7 +106,6 @@
 				<div id="orderDiv">
 					<%
 					SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd"); // 날짜 포매팅
-					DecimalFormat formatter = new DecimalFormat("###,###"); // 가격 포매팅
 
 					mypageDAO page_dao = new mypageDAO();
 					List<mypageVO> orderList = page_dao.showOrderList(user_seq);
@@ -148,7 +146,7 @@
 				</div>
 			</li>
 			<!-- 주문 내역 끝 -->
-		
+			
 		<!-- 추천 영역 시작 -->
 		<%
 			ProductDAO p_dao = new ProductDAO();
@@ -170,7 +168,7 @@
 		%>
 		<li id="recommendLi">
 		<div id="recommendDiv">
-			<h3 class="my_tit"><%=login_vo.getUser_name() %>님을 위한 추천 상품</h3>
+			<h3 class="my_tit"><%=user_nick %>님을 위한 추천 상품</h3>
 				<div id="recommendDiv2">
 					<div id="recommendItem">
 						<div id="r_item1" class="recommendItems"><img src=<%=productList.get(r_list[0]).getPhoto_path().split(";")[0] %>></div>
