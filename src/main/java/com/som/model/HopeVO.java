@@ -14,6 +14,7 @@ public class HopeVO {
 	}
 	
 	
+	
 
 	// 희망상품 정보를 가져오는 생성자
 	public HopeVO(String hope_name, int hope_price, String hope_photo, String hope_content) {

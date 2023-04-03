@@ -20,6 +20,7 @@ SqlSessionFactory sqlSessionFactory = SqlSessionManager.getSqlSession();
 		return cnt;
 	}
 	
+	
 	// 희망상품 불러오기
 	public List<HopeVO> showHope(){
 		SqlSession sqlSession = sqlSessionFactory.openSession(true);
