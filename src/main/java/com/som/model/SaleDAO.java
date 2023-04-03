@@ -18,7 +18,7 @@ public class SaleDAO {
 		sqlSession.close();
 		return cnt;
 	}
-
+	
 	// 매매 상품 리스트
 	public List<SaleVO> selectAllSale() {
 		List<SaleVO> list = null;
@@ -27,20 +27,20 @@ public class SaleDAO {
 		sqlSession.close();
 		return list;
 	}
-
+	
 	public int updateReturn(SaleVO vo) {
 		SqlSession sqlSession = sqlSessionFactory.openSession(true);
 		int cnt = sqlSession.update("updateReturn", vo);
 		sqlSession.close();
 		return cnt;
 	}
-
+	
 	// 판매상품 상세정보
 	public SaleVO detailSale(int num) {
 		SqlSession sqlSession = sqlSessionFactory.openSession(true);
 		SaleVO vo = sqlSession.selectOne("detailSale", num);
 		sqlSession.close();
-
+	
 		return vo;
 	}
 

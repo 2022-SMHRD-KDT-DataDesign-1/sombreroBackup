@@ -22,6 +22,7 @@
 		<typeAlias type="com.som.model.ReviewVO" alias="ReviewVO"/>
 		<typeAlias type="com.som.model.returnVO" alias="returnVO"/>
 		<typeAlias type="com.som.model.AnswerVO" alias="AnswerVO"/>
+		<typeAlias type="com.som.model.HopeVO" alias="HopeVO"/>
 	</typeAliases>
 
 	<!-- 환경설정 ( 계정, url, driver ) -->
@@ -53,6 +54,7 @@
     <mapper resource="com/som/db/ReviewMapper.xml"/>
     <mapper resource="com/som/db/ReturnMapper.xml"/>
     <mapper resource="com/som/db/AnswerMapper.xml"/>  
+    <mapper resource="com/som/db/HopeMapper.xml"/>  
   </mappers>
 </configuration>
 
