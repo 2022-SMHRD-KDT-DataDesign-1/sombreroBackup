@@ -13,9 +13,22 @@ public class HopeVO {
 		super();
 	}
 	
-	
-	
-	
+
+
+
+
+	public HopeVO(int hope_seq, String hope_name, int hope_price, String hope_content, String hope_photo) {
+		super();
+		this.hope_seq = hope_seq;
+		this.hope_name = hope_name;
+		this.hope_price = hope_price;
+		this.hope_content = hope_content;
+		this.hope_photo = hope_photo;
+	}
+
+
+
+
 
 	// 희망상품 정보를 가져오는 생성자
 	public HopeVO(String hope_name, int hope_price, String hope_photo, String hope_content) {
@@ -39,6 +52,10 @@ public class HopeVO {
 		this.hope_photo = hope_photo;
 		this.hope_date = hope_date;
 	}
+
+
+
+
 
 
 

@@ -16,19 +16,24 @@
 <title>admin</title>
 	<link rel="stylesheet" type="text/css" href="css/admin.css">
 	<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+		<script src="js/main.js"></script>
 </head>
 <body>
 
+    <header>
+        <jsp:include page="./common/header.jsp"/>
+    </header>
+
 <!-- 관리자 페이지 -->
-	<div align="center">
+	<div align="center" style="margin-top: 50px">
 		<%
 		UsersDAO dao = new UsersDAO();
 		List<UsersVO> list = dao.selectAllUsers();
 		/* System.out.print(list.size()); */
 		%>
 
-		<a href="index.jsp"><h1>Hello! admin!</h1></a>
-		<br><br><br><br><br><br>
+	
 		<!-- 전체 사용자 출력 -->
 		<h1>전체 사용자 출력</h1>
 		<table class="rwd-table">
@@ -268,6 +273,24 @@
 
 		
 		</script>
+			<script src="vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+	<script>
+		$('.js-pscroll').each(function(){
+			$(this).css('position','relative');
+			$(this).css('overflow','hidden');
+			var ps = new PerfectScrollbar(this, {
+				wheelSpeed: 1,
+				scrollingThreshold: 1000,
+				wheelPropagation: false,
+			});
 
+			$(window).on('resize', function(){
+				ps.update();
+			})
+		});
+	</script>
+	
+
+		<script src="js/main.js"></script>
 </body>
 </html>
