@@ -57,6 +57,7 @@
 		</div>
 	</div>
 		
+		<%total_price = 0; %>
 
 	<!-- shopping Cart -->
 	<form class="bg0 p-t-75 p-b-85">
@@ -84,6 +85,7 @@
 									product_quantity = a.getCart_quantity();
 									product_period = a.getCart_period();
 									total_price += product_price*product_quantity*(product_period/7);
+									System.out.println("check!!!:" + (product_price * product_quantity));
 									StringBuffer rb = new StringBuffer(); %>
 								<tr class="table_row">
 									<td class="column-1">

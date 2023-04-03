@@ -90,6 +90,7 @@
 		String[] product_content = vo.getProduct_content().split(";");
 		String[] p_photo = null;
 		p_photo = vo.getPhoto_path().split(";");
+		product_price = vo.getProduct_price();
 	%>
 	
 	<!-- Product Detail -->
