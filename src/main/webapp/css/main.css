@@ -217,7 +217,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 /*---------------------------------------------*/
 .left-top-bar {
   font-family: TheJamsil5Bold;
-  font-size: 12px;
+  font-size: 17px;
   line-height: 1.8;
   color: #b2b2b2;
 }
@@ -226,7 +226,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 /*---------------------------------------------*/
 .right-top-bar a {
   font-family: TheJamsil5Bold;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 1.8;
 
   height: 100%;
@@ -309,7 +309,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
   display: -ms-flexbox;
   display: flex;
   align-items: center;
-  height: 65%;
+  height: 100%;
   margin-right: 55px;
 }
 
@@ -354,7 +354,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 
 .main-menu > li > a {
   font-family: TheJamsil5Bold;
-  font-size: 14px;
+  font-size: 20px;
   color: #333;
   padding: 5px 0px;
   transition: all 0.4s;
@@ -2151,7 +2151,7 @@ input.num-product::-webkit-inner-spin-button {
 
 .stext-104 {
   font-family: TheJamsil5Bold;
-  font-size: 14px;
+  font-size: 17px;
   line-height: 1.466667;
 }
 
@@ -2164,7 +2164,7 @@ input.num-product::-webkit-inner-spin-button {
 
 .stext-106 {
   font-family: TheJamsil5Bold;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 1.2;
 }
 

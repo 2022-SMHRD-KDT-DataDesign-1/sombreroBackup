@@ -14,6 +14,17 @@ public class mypageVO {
 	private Timestamp return_date;
 	private String photo_path;
 	
+	// 1:1 문의
+	private int inquiry_seq;
+	private String inquiry_title;
+	private String inquiry_content;
+	private Timestamp inquiry_date;
+	private int answer_seq;
+	private String answer_title;
+	private String answer_content;
+	private Timestamp answer_date;
+	
+	
 	public mypageVO() {
 		super();
 	}
@@ -54,6 +65,39 @@ public class mypageVO {
 		return photo_path;
 	}
 
+	public int getInquiry_seq() {
+		return inquiry_seq;
+	}
+
+	public String getInquiry_title() {
+		return inquiry_title;
+	}
+
+	public String getInquiry_content() {
+		return inquiry_content;
+	}
+
+	public Timestamp getInquiry_date() {
+		return inquiry_date;
+	}
+
+	public int getAnswer_seq() {
+		return answer_seq;
+	}
+
+	public String getAnswer_title() {
+		return answer_title;
+	}
+
+	public String getAnswer_content() {
+		return answer_content;
+	}
+
+	public Timestamp getAnswer_date() {
+		return answer_date;
+	}
+
+		
 	
 	
 }
