@@ -91,7 +91,8 @@ public class Frontcontroller extends HttpServlet {
 			service = new returnService();
 		}else if(result.equals("HopeService.do")) {
 			// 희망상품 등록
-		} service = new HopeService();
+			service = new HopeService();
+		} 
 		
 		String moveURL = service.execute(request, response);
 		response.sendRedirect(moveURL);
