@@ -241,6 +241,5 @@ section.notice {
     </div>
 
 </section>
-	<script src="js/main.js"></script>
 </body>
 </html>
