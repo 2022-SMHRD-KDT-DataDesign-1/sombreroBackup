@@ -17,4 +17,5 @@
 	<select id="getContent" resultType="HopeVO">select hope_content from t_hope where hope_seq = hope_seq</select>
 	
 	 
+	 
 </mapper>
