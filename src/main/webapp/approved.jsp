@@ -260,10 +260,6 @@ function jusoCallBack(roadFullAddr,roadAddrPart1,addrDetail,roadAddrPart2,engAdd
 											  <input type="checkbox" name="agree" value="3">
 											  <span>개인정보 이용 동의<strong>(필수)</strong></span>
 											</label>
-											<label for="agree">
-											  <input type="checkbox" name="agree" value="4">
-											  <span>이벤트, 혜택정보 수신동의<strong class="select_disable">(선택)</strong></span>
-											</label>
 										</div>
 										</td>
 									</tr>

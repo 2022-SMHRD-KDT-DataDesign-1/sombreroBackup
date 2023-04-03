@@ -6,6 +6,7 @@
 <%@page import="java.text.DecimalFormat"%>
 <%@page import="java.util.List"%>
 <%@page import="com.som.model.ProductVO"%>
+<%@ include file="./common/header.jsp" %> 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -49,10 +50,6 @@
 </head>
 <body class="animsition">
 	<!-- Header -->
-    <header>
-        <jsp:include page="./common/header.jsp"/>
-    </header>
-
 	<!-- breadcrumb -->
 	<div class="container">
 		<div class="bread-crumb flex-w p-l-25 p-r-15 p-t-30 p-lr-0-lg">
@@ -75,9 +72,6 @@
 	<!--상품 정보 가져오기 -->
 	<%
 	
-		int user_seq = 0;
-		String user_nick = "비회원";
-		UsersVO login_vo = (UsersVO)session.getAttribute("login_vo");
 		
 		if(login_vo != null){
 			System.out.print(login_vo.getUser_id());
@@ -87,12 +81,10 @@
 		
 		int product_seq = Integer.parseInt(request.getParameter("product_seq"));
 		
-		DecimalFormat formatter = new DecimalFormat("###,###");
 		//ProductVO vo = (ProductVO)session.getAttribute("get_product_detail");
 		ProductDAO p_dao = new ProductDAO();
 		ProductVO vo = p_dao.getProductDetail(product_seq);
 
-		int product_price = vo.getProduct_price();
 		String product_name = vo.getProduct_name();
 		String[] product_content = vo.getProduct_content().split(";");
 		String[] p_photo = null;

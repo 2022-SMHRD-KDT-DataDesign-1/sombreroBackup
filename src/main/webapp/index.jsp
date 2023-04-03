@@ -59,72 +59,72 @@
 	<section class="section-slide">
 		<div class="wrap-slick1">
 			<div class="slick1">
-				<div class="item-slick1" style="background-image: url(images/slide-01.jpg);">
+				<div class="item-slick1" style="background-image: url(images/slide-11.jpg);">
 					<div class="container h-full">
 						<div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
 							<div class="layer-slick1 animated visible-false" data-appear="fadeInDown" data-delay="0">
-								<span class="ltext-101 cl2 respon2">
+								<span class="ltext-101 cl2 respon2" style="color: white; font-size: 100px">
 									캠핑
 								</span>
 							</div>
 								
 							<div class="layer-slick1 animated visible-false" data-appear="fadeInUp" data-delay="800">
-								<h2 class="ltext-201 cl2 p-t-19 p-b-43 respon1">
-									굳
+								<h2 class="ltext-201 cl2 p-t-19 p-b-43 respon1" style="color: white">
+									지금바로 떠나세요
 								</h2>
 							</div>
 								
 							<div class="layer-slick1 animated visible-false" data-appear="zoomIn" data-delay="1600">
 								<a href="product.jsp" class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04">
-									지금가셈
+									대여하기
 								</a>
 							</div>
 						</div>
 					</div>
 				</div>
 
-				<div class="item-slick1" style="background-image: url(images/slide-02.jpg);">
+				<div class="item-slick1" style="background-image: url(images/slide-22.jpg);">
 					<div class="container h-full">
 						<div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
 							<div class="layer-slick1 animated visible-false" data-appear="rollIn" data-delay="0">
-								<span class="ltext-101 cl2 respon2">
+								<span class="ltext-101 cl2 respon2" style="color: white; font-size: 100px">
 									골프
 								</span>
 							</div>
 								
 							<div class="layer-slick1 animated visible-false" data-appear="lightSpeedIn" data-delay="800">
-								<h2 class="ltext-201 cl2 p-t-19 p-b-43 respon1">
-									비싸다
+								<h2 class="ltext-201 cl2 p-t-19 p-b-43 respon1" style="color : white">
+									지금바로 도전하세요
 								</h2>
 							</div>
 								
 							<div class="layer-slick1 animated visible-false" data-appear="slideInUp" data-delay="1600">
 								<a href="product.jsp" class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04">
-									지금가셈
+									대여하기
 								</a>
 							</div>
 						</div>
 					</div>
 				</div>
 
-				<div class="item-slick1" style="background-image: url(images/slide-03.png);">
+				<div class="item-slick1" style="background-image: url(images/slide-33.jpg);">
 					<div class="container h-full">
 						<div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
 							<div class="layer-slick1 animated visible-false" data-appear="rotateInDownLeft" data-delay="0">
-								<span class="ltext-101 cl2 respon2">
-									김홍남
+								<span class="ltext-101 cl2 respon2" style="color: white; font-size: 100px">
+									바다여행
 								</span>
 							</div>
 								
 							<div class="layer-slick1 animated visible-false" data-appear="rotateInUpRight" data-delay="800">
-								<h2 class="ltext-201 cl2 p-t-19 p-b-43 respon1">
-									안호씨가 좋아하는
+								<h2 class="ltext-201 cl2 p-t-19 p-b-43 respon1" style="color: white">
+									지금바로 떠나세요
 								</h2>
 							</div>
 								
 							<div class="layer-slick1 animated visible-false" data-appear="rotateIn" data-delay="1600">
 								<a href="product.jsp" class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04">
-									김홍남
+									대여하기
 								</a>
 							</div>
 						</div>
@@ -142,16 +142,16 @@
 				<div class="col-md-6 col-xl-4 p-b-30 m-lr-auto">
 					<!-- Block1 -->
 					<div class="block1 wrap-pic-w">
-						<img src="images/banner-01.jpg" alt="IMG-BANNER">
+						<img src="https://cdn.pixabay.com/photo/2021/01/04/10/45/tent-5887144__340.jpg" alt="IMG-BANNER">
 
 						<a href="product.jsp" class="block1-txt ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3">
 							<div class="block1-txt-child1 flex-col-l">
 								<span class="block1-name ltext-102 trans-04 p-b-8">
-									Women
+									캠핑
 								</span>
 
 								<span class="block1-info stext-102 trans-04">
-									Spring 2018
+									Spring 2023
 								</span>
 							</div>
 
@@ -167,16 +167,16 @@
 				<div class="col-md-6 col-xl-4 p-b-30 m-lr-auto">
 					<!-- Block1 -->
 					<div class="block1 wrap-pic-w">
-						<img src="images/banner-02.jpg" alt="IMG-BANNER">
+						<img src="https://cdn.pixabay.com/photo/2017/12/28/18/40/windsurfing-3045927__340.jpg" alt="IMG-BANNER">
 
 						<a href="product.jsp" class="block1-txt ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3">
 							<div class="block1-txt-child1 flex-col-l">
 								<span class="block1-name ltext-102 trans-04 p-b-8">
-									Men
+									스포츠
 								</span>
 
 								<span class="block1-info stext-102 trans-04">
-									Spring 2018
+									Summer 2023
 								</span>
 							</div>
 
@@ -192,15 +192,15 @@
 				<div class="col-md-6 col-xl-4 p-b-30 m-lr-auto">
 					<!-- Block1 -->
 					<div class="block1 wrap-pic-w">
-						<img src="images/banner-03.jpg" alt="IMG-BANNER">
+						<img src="https://cdn.pixabay.com/photo/2018/12/10/22/57/child-fishing-3867994__340.jpg" alt="IMG-BANNER">
 
 						<a href="product.jsp" class="block1-txt ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3">
 							<div class="block1-txt-child1 flex-col-l">
-								<span class="block1-name ltext-102 trans-04 p-b-8">
-									Accessories
+								<span class="block1-name ltext-102 trans-04 p-b-8" style="color: #e0e0e0;">
+									낚시
 								</span>
 
-								<span class="block1-info stext-102 trans-04">
+								<span class="block1-info stext-102 trans-04" style="color: #e0e0e0;">
 									New Trend
 								</span>
 							</div>
@@ -281,6 +281,8 @@
 		int p_price = 0;
 		String[] p_content = null;
 		String[] p_photo = null;
+		int index = 1;
+		
 	%>
 
 			<div class="row isotope-grid">
@@ -288,19 +290,20 @@
 				<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item <%= p_dao.getCateDepth1(p.getCate_seq()).getCate_depth1() %>">
 					<!-- Block2 -->
 					<div class="block2">
-						<div class="block2-pic hov-img0">
+						<div class="block2-pic hov-img0" style="height: 320px; width: auto;">
 						<% int product_seq = p.getProduct_seq();
 								String[] photo_path = p_dao.getPhotoPath(p.getPhoto_seq()).get(0).getPhoto_path().split(";");
 							%>
-							<img src=<%=photo_path[0] %> alt="IMG-PRODUCT">
+							<img src=<%=photo_path[0] %> alt="IMG-PRODUCT" style="position: absolute; width: 100%; top: 50%; left: 50%; transform: translate(-50%, -50%);">
 							<input type="hidden" name="d_pho1" value="<%=photo_path[0] %>">
 							<input type="hidden" name="d_pho2" value="<%=photo_path[1] %>">
 							<input type="hidden" name="d_pho3" value="<%=photo_path[2] %>">
 							<input type="hidden" name="d_name" value="<%=p.getProduct_name() %>">
 							<input type="hidden" name="d_content" value="<%=p.getProduct_content().split(";")[0] %>">
-							<input type="hidden" name="d_price" value="<%=p.getProduct_price() %>">
+							<input type="hidden" name="d_price" value="<%=p.getProduct_price() %>"
+							>
 
-							<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1"  onclick="callBack(<%=product_seq %>);">
+							<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1"  onclick="callBack(<%=index %>);">
 								Quick View
 							</a>
 						</div>
@@ -325,7 +328,10 @@
 						</div>
 					</div>
 				</div>
-				<%} %>
+				<%
+				index += 1;
+				
+				} %>
 			</div>
 
 			<!-- Load more -->

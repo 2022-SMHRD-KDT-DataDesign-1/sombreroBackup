@@ -90,7 +90,12 @@
 							로그인
 						</a>								
 						<% }else{%>
-						<span><%=login_vo.getUser_id()%> 님 반갑습니다!</span>		
+						<span class="flex-c-m trans-04 p-lr-25" style="font-family: TheJamsil5Bold;
+    font-size: 15px;
+    line-height: 1.8;
+    height: 100%;
+    color: #b2b2b2;
+    border-right: 1px solid rgba(255,255,255,0.3);"><%=login_vo.getUser_id()%> 님 반갑습니다!</span>		
 						<%if(login_vo.getUser_id().equals("admin")){ %>
 						<a href="admin.jsp" class="flex-c-m trans-04 p-lr-25">
 							관리자페이지
