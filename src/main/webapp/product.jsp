@@ -122,11 +122,11 @@
 				<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item <%= p_dao.getCateDepth1(p.getCate_seq()).getCate_depth1() %>">
 					<!-- Block2 -->
 					<div class="block2">
-						<div class="block2-pic hov-img0">
+						<div class="block2-pic hov-img0" style="height: 300px; width: auto;">
 							<% int product_seq = p.getProduct_seq();
 								String[] photo_path = p.getPhoto_path().split(";");
 							%>
-							<img src=<%=photo_path[0] %> alt="IMG-PRODUCT">
+							<img src=<%=photo_path[0] %> alt="IMG-PRODUCT" style="position: absolute; width: 100%; top: 50%; left: 50%; transform: translate(-50%, -50%);">
 							<input type="hidden" name="d_pho1" value="<%=photo_path[0] %>">
 							<input type="hidden" name="d_pho2" value="<%=photo_path[1] %>">
 							<input type="hidden" name="d_pho3" value="<%=photo_path[2] %>">
