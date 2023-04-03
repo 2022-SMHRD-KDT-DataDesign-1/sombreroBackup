@@ -26,41 +26,35 @@
 		</div>
 		 -->
 		
-		<form name="hopeProduct" action="adminHopeService.do" class="form-horizontal" method="post" enctype="multipart/form-data">
+		<form name="hopeProduct" action="AddHopeService.do" class="form-horizontal" method="post" enctype="multipart/form-data">
 		
 			
-			<div class="form-group row">
-				<label class="col-sm-2">상품 목록</label>
-				<div class="com-sm-3">
-					<input type="text" id="hope_productCate" name="productId" class="form-control">
-				</div>
-			</div>
 			
 			<div class="form-group row">
 				<label class="col-sm-2">상품 이름</label>
 				<div class="com-sm-3">
-					<input name="name" type="text" id="name" class="form-control">
+					<input name="hope_name" type="text" id="name" class="form-control">
 				</div>
 			</div>
 			
 			<div class="form-group row">
 				<label class="col-sm-2">가격</label>
 				<div class="com-sm-3">
-					<input name="Price" type="text" id="unitPrice" class="form-control">
+					<input name="hope_price" type="text" id="unitPrice" class="form-control">
 				</div>
 			</div>
 			
 			<div class="form-group row">
 				<label class="col-sm-2">상세 내용</label>
 				<div class="com-sm-5">
-					<textarea name="description" cols="50" rows="2" class="form-control"></textarea>
+					<textarea name="hope_content" cols="50" rows="2" class="form-control"></textarea>
 				</div>
 			</div>
 			
 			<div class="form-group row">
 				<label class="col-sm-2">상품 이미지</label>
 				<div>
-					<input name="productImage" type="file" class="form-control">
+					<input name="hope_photo" type="file" class="form-control">
 				</div>
 			</div>
 				

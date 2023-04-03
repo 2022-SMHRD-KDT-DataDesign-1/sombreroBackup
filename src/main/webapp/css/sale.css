@@ -1,5 +1,14 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: TheJamsil5Bold;
+    src: url('../fonts/The_Jamsil_OTF/The_Jamsil-3-Regular.ttf');
+}
+
+body{
+	font-family: TheJamsil5Bold;
+	font-size: 15px;
+}
 
 #saleDiv {
 	display: flex;

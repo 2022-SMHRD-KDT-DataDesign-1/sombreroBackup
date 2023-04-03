@@ -69,7 +69,7 @@
 						</div>
 
 						<input type="submit" class="flex-c-m stext-101 cl0 size-121 bg3 bor1 hov-btn3 p-lr-15 trans-04 pointer">
-							Submit
+							
 						
 					</form>
 				</div>
@@ -86,8 +86,7 @@
 							</span>
 
 							<p class="stext-115 cl6 size-213 p-t-18">
-								Coza Store Center 8th floor, 379 Hudson St, New York, NY 10018 US
-							</p>
+		광주 동구 예술길 31-15, 4층	</p>
 						</div>
 					</div>
 
@@ -102,7 +101,7 @@
 							</span>
 
 							<p class="stext-115 cl1 size-213 p-t-18">
-								+1 800 1236879
+								+82 010-1234-5678
 							</p>
 						</div>
 					</div>
@@ -114,11 +113,11 @@
 
 						<div class="size-212 p-t-2">
 							<span class="mtext-110 cl2">
-								Sale Support
+								Rental Support
 							</span>
 
 							<p class="stext-115 cl1 size-213 p-t-18">
-								contact@example.com
+								Sombrero@gmail.com
 							</p>
 						</div>
 					</div>

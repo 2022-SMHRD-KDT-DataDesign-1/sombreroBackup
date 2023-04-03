@@ -6,6 +6,12 @@
   box-sizing: border-box;
 }
 
+@font-face {
+    font-family: TheJamsil5Bold;
+    src: url('../fonts/The_Jamsil_OTF/The_Jamsil-3-Regular.ttf');
+}
+
+
 main {
   padding: 2em;
   float: left;
@@ -35,7 +41,7 @@ table thead th {
   padding: 0.35em 0 0.35em;
   font-weight: 400;
   text-align: left;
-  font-family: "Helvetica", "Helvetica Neue", "Arial", sans-serif;
+  font-family: "TheJamsil5Bold", "Helvetica Neue", "Arial", sans-serif;
   font-size: 1.25em;
 }
 table tbody {
@@ -77,6 +83,8 @@ table tfoot td {
 }
 .rwd-table {
   display: block;
+  padding:80px;
+  margin-top: 100px;
 }
 .rwd-table tbody {
   border: none;
@@ -133,7 +141,7 @@ table tfoot td {
   .rwd-table tr td {
     padding: 0.75em 0 0.75em 0.25em;
     float: none;
-    width: auto;
+    width: 10%;
   }
   .rwd-table tr td:before {
     padding: 0 !important;

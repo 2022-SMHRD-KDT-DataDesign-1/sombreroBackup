@@ -14,26 +14,22 @@
 <head>
 <meta charset="UTF-8">
 <title>admin</title>
-	<link rel="stylesheet" type="text/css" href="css/admin.css">
-	<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
-		<link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
-		<script src="js/main.js"></script>
+<link rel="stylesheet" type="text/css" href="css/admin.css">
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
 </head>
-<body>
+<body style="width: 50%; margin-left: 450px;">
 
-    <header>
-        <jsp:include page="./common/header.jsp"/>
-    </header>
 
-<!-- 관리자 페이지 -->
-	<div align="center" style="margin-top: 50px">
+		<a href="index.jsp" style="font-size:30px;">Main</a>
+	<!-- 관리자 페이지 -->
+	<div align="center" style="margin-top: 50px;">
 		<%
 		UsersDAO dao = new UsersDAO();
 		List<UsersVO> list = dao.selectAllUsers();
 		/* System.out.print(list.size()); */
 		%>
 
-	
 		<!-- 전체 사용자 출력 -->
 		<h1>전체 사용자 출력</h1>
 		<table class="rwd-table">
@@ -66,16 +62,18 @@
 			</tbody>
 		</table>
 
-</div>
+	</div>
 
 
-		<!-- 상품 매입 관리 -->
-<div align="center">
+	<!-- 상품 매입 관리 -->
+	<div align="center">
 
-		<% SaleDAO Saledao = new SaleDAO() ;
-		List<SaleVO> SaleList = Saledao.selectAllSale();%>
-		
-		
+		<%
+		SaleDAO Saledao = new SaleDAO();
+		List<SaleVO> SaleList = Saledao.selectAllSale();
+		%>
+
+
 		<h1>상품 매입 관리</h1>
 		<form>
 			<table class="rwd-table">
@@ -88,17 +86,18 @@
 					<th>반품희망여부</th>
 				</tr>
 				<%
-				for (int i = 0; i<SaleList.size(); i++) {
-					if(SaleList.get(i).getSale_return() == null){
+				for (int i = 0; i < SaleList.size(); i++) {
+					if (SaleList.get(i).getSale_return() == null) {
 				%>
 				<tr>
 					<td><%=SaleList.get(i).getCate_seq()%></td>
 					<td><%=SaleList.get(i).getUser_id()%></td>
-					<td><a href="buyDetail.jsp?sale_seq=<%=SaleList.get(i).getSale_seq()%>"><%=SaleList.get(i).getSale_name()%></a></td>
+					<td><a
+						href="buyDetail.jsp?sale_seq=<%=SaleList.get(i).getSale_seq()%>"><%=SaleList.get(i).getSale_name()%></a></td>
 					<td><%=SaleList.get(i).getSale_price()%></td>
 					<td><%=SaleList.get(i).getSale_date()%></td>
 					<td><%=SaleList.get(i).getSale_check()%></td>
-<%-- 					<td><select name="sale_return" class="sale_return">
+					<%-- 					<td><select name="sale_return" class="sale_return">
 							<option>선택</option>
 							<option>매입</option>
 							<option>반품</option>
@@ -111,18 +110,21 @@
 					</td> --%>
 				</tr>
 
-				<%} }%>
+				<%
+				}
+				}
+				%>
 
 			</table>
 		</form>
-</div>
+	</div>
 
-<!-- 상품 반납 관리 -->
+	<!-- 상품 반납 관리 -->
 
 
-<!-- 사용자 상태 관리 -->
+	<!-- 사용자 상태 관리 -->
 
-<div align="center">
+	<div align="center">
 		<h1>사용자 상태 관리</h1>
 		<table class="rwd-table">
 			<thead>
@@ -136,7 +138,7 @@
 			<tbody>
 
 				<%
-				for(int i = 0; i < list.size(); i++) {
+				for (int i = 0; i < list.size(); i++) {
 				%>
 				<tr>
 					<td><%=list.get(i).getUser_id()%></td>
@@ -161,9 +163,9 @@
 				%>
 			</tbody>
 		</table>
-</div>
+	</div>
 
-		<!-- 문의사항 관리 기능 -->
+	<!-- 문의사항 관리 기능 -->
 	<div align="center">
 		<%
 		inquiryDAO Inquirydao = new inquiryDAO();
@@ -171,48 +173,53 @@
 		%>
 
 		<h1>문의 사항 관리</h1>
-				<form action="AnswerService.do" method="get">
-		<table class="rwd-table">
-			<thead>
-				<tr>
-					<th>번호</th>
-					<th>작성자</th>
-					<th>내용</th>
-					<th>작성일자</th>
-					<th>답변 제목</th>
-					<th>답변 내용</th>
-				</tr>
-			</thead>
-			<tbody>
-				<%
-				for (InquiryVO m : Inquirylist) {
+		<form action="AnswerService.do" method="get">
+			<table class="rwd-table">
+				<thead>
+					<tr>
+						<th>번호</th>
+						<th>작성자</th>
+						<th>내용</th>
+						<th>작성일자</th>
+						<th>답변 제목</th>
+						<th>답변 내용</th>
+					</tr>
+				</thead>
+				<tbody>
+					<%
+					for (InquiryVO m : Inquirylist) {
 					%>
-				<tr>
-					<td><%=m.getInquiry_seq()%></td>
-					<td><%=m.getUser_nick()%></td>
-					<td><%=m.getInquiry_content()%></td>
-					<td><%=m.getInquiry_date()%></td>
-					<td><input type="text" name="answer_title" placeholder="제목을 입력해주세요"></td>
-					<td><textarea name="answer_content" placeholder="내용을 입력해주세요"></textarea></td>
-					<input type="hidden" name="inquiry_seq" value="<%=m.getInquiry_seq()%>">
-					<td><input type="submit" value="작성"></td>
-					
-				</tr>
+					<tr>
+						<td><%=m.getInquiry_seq()%></td>
+						<td><%=m.getUser_nick()%></td>
+						<td><%=m.getInquiry_content()%></td>
+						<td><%=m.getInquiry_date()%></td>
+						<td><input type="text" name="answer_title"
+							placeholder="제목을 입력해주세요"></td>
+						<td><textarea name="answer_content" placeholder="내용을 입력해주세요"></textarea></td>
+						<input type="hidden" name="inquiry_seq" value="<%=m.getInquiry_seq()%>">
+						<td><input type="submit" value="작성"></td>
 
-				<%
-				}
-				%>
+					</tr>
 
-			</tbody>
-		</table>
-					</form>
-</div>
+					<%
+					}
+					%>
+
+				</tbody>
+			</table>
+		</form>
+	<a href="Hope.jsp" style="font-size:30px;">희망상품 업로드</a>
+	</div>
+	
+	
 	<div align="center">
 		<h1>상품 재고 관리</h1>
-		
-		<%ProductVO pvo = new ProductVO();
-		  ProductDAO pdao = new ProductDAO();
-		  List<ProductVO> productList = pdao.adminShowProduct(); 
+
+		<%
+		ProductVO pvo = new ProductVO();
+		ProductDAO pdao = new ProductDAO();
+		List<ProductVO> productList = pdao.adminShowProduct();
 		%>
 		<table class="rwd-table" id="exampleTable">
 			<thead>
@@ -225,7 +232,7 @@
 				</tr>
 			</thead>
 			<tbody>
-	<%
+				<%
 				for (ProductVO m : productList) {
 				%>
 				<tr>
@@ -233,16 +240,18 @@
 					<td><%=m.getProduct_name()%></td>
 					<td><%=m.getProduct_rest()%></td>
 					<td><%=m.getProduct_rent()%></td>
-					<td><%=m.getProduct_have() %></td>
-					</tr>
-					<%} %>
+					<td><%=m.getProduct_have()%></td>
+				</tr>
+				<%
+				}
+				%>
 
 
 			</tbody>
 		</table>
-		</div>
+	</div>
 
-	
+
 
 
 	<script type="text/javascript">
@@ -273,24 +282,6 @@
 
 		
 		</script>
-			<script src="vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-	<script>
-		$('.js-pscroll').each(function(){
-			$(this).css('position','relative');
-			$(this).css('overflow','hidden');
-			var ps = new PerfectScrollbar(this, {
-				wheelSpeed: 1,
-				scrollingThreshold: 1000,
-				wheelPropagation: false,
-			});
 
-			$(window).on('resize', function(){
-				ps.update();
-			})
-		});
-	</script>
-	
-
-		<script src="js/main.js"></script>
 </body>
 </html>
