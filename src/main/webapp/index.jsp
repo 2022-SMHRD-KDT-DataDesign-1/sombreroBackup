@@ -282,6 +282,7 @@
 		String[] p_content = null;
 		String[] p_photo = null;
 		int index = 1;
+		
 	%>
 
 			<div class="row isotope-grid">
@@ -329,6 +330,7 @@
 				</div>
 				<%
 				index += 1;
+				
 				} %>
 			</div>
 
