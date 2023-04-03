@@ -25,4 +25,12 @@ public class mypageDAO {
 		
 		return user_status;
 	}
+	
+	public List<mypageVO> showMyInquiry(int user_seq) {
+		SqlSession sqlSession = sqlSessionFactory.openSession(true);
+		List<mypageVO> inquiryList = sqlSession.selectList("showMyInquiry", user_seq);
+		sqlSession.close();
+		
+		return inquiryList;
+	}
 }

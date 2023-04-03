@@ -59,7 +59,7 @@
 	<section class="section-slide">
 		<div class="wrap-slick1">
 			<div class="slick1">
-				<div class="item-slick1" style="background-image: url(images/slide-11.jpg);">
+				<div class="item-slick1" style="background-image: url(images/slide-44.jpg);">
 					<div class="container h-full">
 						<div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
 							<div class="layer-slick1 animated visible-false" data-appear="fadeInDown" data-delay="0">
@@ -83,7 +83,7 @@
 					</div>
 				</div>
 
-				<div class="item-slick1" style="background-image: url(images/slide-22.jpg);">
+				<div class="item-slick1" style="background-image: url(images/slide-46.jpg);">
 					<div class="container h-full">
 						<div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
 							<div class="layer-slick1 animated visible-false" data-appear="rollIn" data-delay="0">
@@ -147,7 +147,7 @@
 						<a href="product.jsp" class="block1-txt ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3">
 							<div class="block1-txt-child1 flex-col-l">
 								<span class="block1-name ltext-102 trans-04 p-b-8">
-									캠핑
+									캠핑  
 								</span>
 
 								<span class="block1-info stext-102 trans-04">
@@ -290,7 +290,7 @@
 				<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item <%= p_dao.getCateDepth1(p.getCate_seq()).getCate_depth1() %>">
 					<!-- Block2 -->
 					<div class="block2">
-						<div class="block2-pic hov-img0" style="height: 320px; width: auto;">
+						<div class="block2-pic hov-img0" style="height: 300px; width: auto;">
 						<% int product_seq = p.getProduct_seq();
 								String[] photo_path = p_dao.getPhotoPath(p.getPhoto_seq()).get(0).getPhoto_path().split(";");
 							%>

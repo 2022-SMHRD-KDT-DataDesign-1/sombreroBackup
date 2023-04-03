@@ -20,11 +20,9 @@
 <link rel="stylesheet" type="text/css" href="css/mypage.css">
 </head>
 <body>
-	<%System.out.println("ccccczsfzdvXDfgvbdfbxvbzdved1111"); %>
 	
 	<%
 	// 상태 가져오기
-	System.out.println("mapage" + login_vo);
 	mypageDAO m_dao = new mypageDAO();
 	String user_status = m_dao.showUserStatus(user_seq);
 	// String user_status = login_vo.getUser_status();
@@ -147,6 +145,64 @@
 			</li>
 			<!-- 주문 내역 끝 -->
 			
+			<!-- 1:1 문의 답변 확인하기 시작 -->
+			<%
+				SimpleDateFormat simpleDateFormat2 = new SimpleDateFormat("yyyy-MM-dd-hh:mm:ss"); // 날짜 포매팅
+				List<mypageVO> inquiryList = m_dao.showMyInquiry(user_seq); // 문의 및 답변 가져오기
+				
+				int i_cnt = 1; // 문의사항 시퀀스
+				String i_status = null; // 답변 처리 상태
+			%>
+			<li>
+			<div id="myInquiry">
+			<h3 class="my_tit">1:1 문의 답변 확인하기</h3>
+			<div id="inquiryTableDiv">
+			<table id="inquiryTable">
+				<tr id="inquiryTh">
+					<th class="inquiry_seq"></th>
+					<th class="inquiryContent">내용</th>
+					<th class="inquiryWriteDate">작성일</th>
+					<th class="answerState">처리 상태</th>
+				</tr>
+				<%for(mypageVO m: inquiryList){ %>
+				<tr id="i_show"<%=i_cnt %> class="myInquiryTd">
+					<td class="inquiry_seq"><%= i_cnt %></td>
+					
+					<!-- 미답변 상태면 안 열리게 -->
+					<%if(m.getAnswer_date() == null){ // 미답변 상태%>
+					<td class="inquiryContent"><a href="javascript:void(0)"><%= m.getInquiry_title() %></a></td>
+					<%}else{ // 답변 상태%>					
+					<td class="inquiryContent" onClick="showAnswer(<%= i_cnt%>)"><a href="javascript:void(0)"><%= m.getInquiry_title() %></a></td>
+					<%} %>
+					
+					<td class="inquiryWriteDate"><%=simpleDateFormat2.format(m.getInquiry_date()) %></td>
+					<%if(m.getAnswer_date() == null){
+						i_status = "미답변";	
+					}else{
+						i_status = "처리완료";
+					}
+					%>
+					<td class="answerState"><%=i_status %></td>
+				</tr>
+				<tr id="i_1hidden<%=i_cnt %>" class="myInquiryContentTd i_hidden">
+					<td class="inquiry_seq"></td>
+					<td class="inquiryContent"><%=m.getInquiry_content() %></td>
+					<td class="inquiryWriteDate"></td>
+					<td class="answerState"></td>
+				</tr>
+				<tr id="i_2hidden<%=i_cnt++ %>" class="answerTd i_hidden">
+					<td class="inquiry_seq">일생일대<br>CS담당자</td>
+					<td class="inquiryContent"><%=m.getAnswer_title() %><br><%=m.getAnswer_content() %></td>
+					<td class="inquiryWriteDate"><%=m.getAnswer_date() %></td>
+					<td class="answerState"><%= i_status%></td>
+				</tr>
+				<%} %>
+			</table>
+			</div>
+			</div>
+			</li>
+			<!-- 1:1 문의 답변 확인하기 끝 -->
+			
 		<!-- 추천 영역 시작 -->
 		<%
 			ProductDAO p_dao = new ProductDAO();
@@ -163,9 +219,8 @@
 					}
 				}
 			}
-		
+			%>
 			
-		%>
 		<li id="recommendLi">
 		<div id="recommendDiv">
 			<h3 class="my_tit"><%=user_nick %>님을 위한 추천 상품</h3>
@@ -199,5 +254,6 @@
 	</footer>
 
 	<script src="./js/mypage.js" type="text/javascript"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
