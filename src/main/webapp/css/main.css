@@ -40,6 +40,12 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 [ FONT ]*/
 
 @font-face {
+    font-family: 'TheJamsil5Bold';
+    src: url('../fonts/The_Jamsil_OTF/The_Jamsil-3-Regular.ttf');
+}
+
+
+@font-face {
   font-family: Poppins-Regular;
   src: url('../fonts/Poppins/Poppins-Regular.ttf'); 
 }
@@ -230,7 +236,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 
 /*---------------------------------------------*/
 .left-top-bar {
-  font-family: Poppins-Regular;
+  font-family: TheJamsil5Bold;
   font-size: 12px;
   line-height: 1.8;
   color: #b2b2b2;
@@ -239,7 +245,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 
 /*---------------------------------------------*/
 .right-top-bar a {
-  font-family: Poppins-Regular;
+  font-family: TheJamsil5Bold;
   font-size: 12px;
   line-height: 1.8;
 
@@ -367,7 +373,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 }
 
 .main-menu > li > a {
-  font-family: Poppins-Medium;
+  font-family: TheJamsil5Bold;
   font-size: 14px;
   color: #333;
   padding: 5px 0px;
@@ -422,7 +428,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 }
 
 .sub-menu a {
-  font-family: Poppins-Regular;
+  font-family: TheJamsil5Bold;
   font-size: 14px;
   line-height: 1.5;
   color: #555;
@@ -492,7 +498,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 /*---------------------------------------------*/
 .icon-header-noti::after {
   content: attr(data-notify);
-  font-family: Poppins-Regular;
+  font-family: TheJamsil5Bold;
   font-size: 12px;
   color: #fff;
   line-height: 15px;
@@ -560,7 +566,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 
 /*---------------------------------------------*/
 .wrap-search-header input {
-  font-family: Poppins-ExtraLight;
+  font-family: TheJamsil5Bold;
   font-size: 50px;
   line-height: 1.2;
   color: #333;
@@ -736,7 +742,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 }
 
 .main-menu-m > li > a {
-  font-family: Poppins-Medium;
+  font-family: TheJamsil5Bold;
   font-size: 14px;
   color: white;
   line-height: 2.8;
@@ -790,7 +796,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 }
 
 .sub-menu-m a {
-  font-family: Poppins-Regular;
+  font-family: TheJamsil5Bold;
   font-size: 14px;
   color: #666;
   line-height: 2.5;
@@ -2346,57 +2352,57 @@ input.num-product::-webkit-inner-spin-button {
 /*//////////////////////////////////////////////////////////////////
 [ L-Text >= 26 ]*/
 .ltext-101 {
-  font-family: Poppins-Regular;
+  font-family: TheJamsil5Bold;
   font-size: 28px;
   line-height: 1.2857;
 }
 
 .ltext-102 {
-  font-family: Poppins-Bold;
+  font-family: TheJamsil5Bold;
   font-size: 28px;
   line-height: 1.1;
 }
 
 .ltext-103 {
-  font-family: Poppins-Bold;
+  font-family: TheJamsil5Bold;
   font-size: 36px;
   line-height: 1.1;
   text-transform: uppercase;
 }
 
 .ltext-104 {
-  font-family: Poppins-Bold;
+  font-family: TheJamsil5Bold;
   font-size: 60px;
   line-height: 1.1;
   text-transform: uppercase;
 }
 
 .ltext-105 {
-  font-family: Poppins-Bold;
+  font-family: TheJamsil5Bold;
   font-size: 50px;
   line-height: 1.1;
 }
 
 .ltext-106 {
-  font-family: Poppins-Bold;
+  font-family: TheJamsil5Bold;
   font-size: 36px;
   line-height: 1.2;
 }
 
 .ltext-107 {
-  font-family: Poppins-Bold;
+  font-family: TheJamsil5Bold;
   font-size: 30px;
   line-height: 1.1;
 }
 
 .ltext-108 {
-  font-family: Poppins-Bold;
+  font-family: TheJamsil5Bold;
   font-size: 26px;
   line-height: 1.3846;
 }
 
 .ltext-109 {
-  font-family: Poppins-Bold;
+  font-family: TheJamsil5Bold;
   font-size: 36px;
   line-height: 1.2;
 }
@@ -2404,14 +2410,14 @@ input.num-product::-webkit-inner-spin-button {
 
 /*---------------------------------------------*/
 .ltext-201 {
-  font-family: PlayfairDisplay-Bold;
-  font-size: 60px;
+  font-family: TheJamsil5Bold;
+  font-size: 100px;
   line-height: 1.1;
   text-transform: uppercase;
 }
 
 .ltext-202 {
-  font-family: PlayfairDisplay-Regular;
+  font-family: TheJamsil5Bold;
   font-size: 28px;
   line-height: 1.2857;
 }
