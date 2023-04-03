@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.som.db.HopeMapper">
+	
+	<insert id="insertHope" parameterType="HopeVO">
+	insert into t_hope values(hope_seq.nextval,#{hope_name},#{hope_price},#{hope_photo},#{hope_content},sysdate)
+	</insert>
+	<select id="getHopeDetail" resultType="HopeVO"> select * from t_hope where hope_seq=#{hope_seq} </select>
+	
+	
+	<select id="showHope" resultType="HopeVO"> select * from t_hope</select>
+	<select id="getName" resultType="HopeVO"> select hope_name from t_hope where hope_seq = hope_seq</select>
+	<select id="getPrice" resultType="HopeVO">select hope_price from t_hope where hope_seq = hope_seq</select>
+	<select id="getPhoto" resultType="HopeVO">select hope_photo from t_hope where hope_seq = hope_seq</select>
+	<select id="getContent" resultType="HopeVO">select hope_content from t_hope where hope_seq = hope_seq</select>
+	
+	 
+</mapper>
