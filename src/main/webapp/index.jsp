@@ -290,7 +290,7 @@
 				<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item <%= p_dao.getCateDepth1(p.getCate_seq()).getCate_depth1() %>">
 					<!-- Block2 -->
 					<div class="block2">
-						<div class="block2-pic hov-img0" style="height: 320px; width: auto;">
+						<div class="block2-pic hov-img0" style="height: 300px; width: auto;">
 						<% int product_seq = p.getProduct_seq();
 								String[] photo_path = p_dao.getPhotoPath(p.getPhoto_seq()).get(0).getPhoto_path().split(";");
 							%>

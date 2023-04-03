@@ -62,6 +62,11 @@ function jusoCallBack(roadFullAddr,roadAddrPart1,addrDetail,roadAddrPart2,engAdd
 <script src="https://cdn.iamport.kr/v1/iamport.js"></script>
 <script src="http://code.jquery.com/jquery-3.1.0.js"></script>
 <link rel="shortcut icon" href="#">
+<style type="text/css">
+	.app_table tr{
+		height: 56px;
+	}
+</style>
 </head>
 <body class="animsition">
 
@@ -184,7 +189,7 @@ function jusoCallBack(roadFullAddr,roadAddrPart1,addrDetail,roadAddrPart2,engAdd
 								<colgroup>
 									<col style="width:25%"><col>
 								</colgroup>
-								<tbody>
+								<tbody class="app_table">
 							
 									<tr>
 										<th class="column-1"><label>주문자</label></th>
@@ -212,7 +217,11 @@ function jusoCallBack(roadFullAddr,roadAddrPart1,addrDetail,roadAddrPart2,engAdd
 										<td class="column-2">
 										    <input type="hidden" id="confmKey" name="confmKey" value=""  >
 											<input type="text" id="zipNo" name="zipNo" readonly style="width:100px">
-											<input type="button"  value="주소검색" onclick="goPopup();">
+										</td>
+										<td>
+											<div onclick="check_onclick()" class="flex-c-m stext-101 cl2 size-119 bg8 bor13 hov-btn3 p-lr-15 trans-04 pointer m-tb-10">
+												<input type="button"  value="주소검색" onclick="goPopup();" style="background: none;">
+											</div>
 										</td>
 									</tr>
 									<tr>
@@ -228,9 +237,9 @@ function jusoCallBack(roadFullAddr,roadAddrPart1,addrDetail,roadAddrPart2,engAdd
 									</tr>
 									
 									<tr>
-										<td class="column-1"></td>
+										<td class="column-1"><span></span></td>
 										<td class="column-2">
-											<div class="flex-c-m stext-101 cl2 size-119 bg8 bor13 hov-btn3 p-lr-15 trans-04 pointer m-tb-10">
+											<div class="flex-c-m stext-101 cl2 size-119 bg8 bor13 hov-btn3 p-lr-15 trans-04 pointer m-tb-10" style="width: 220px;">
 												<a href="#" onclick="requestPay()">결제 하기</a>
 											</div>
 										</td>
