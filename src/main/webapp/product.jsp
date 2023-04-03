@@ -114,6 +114,7 @@
 			int p_price = 0;
 			String[] p_content = null;
 			String[] p_photo = null;
+			int index = 1;
 	%>
 
 
@@ -133,7 +134,7 @@
 							<input type="hidden" name="d_name" value="<%=p.getProduct_name() %>">
 							<input type="hidden" name="d_content" value="<%=p.getProduct_content().split(";")[0] %>">
 							<input type="hidden" name="d_price" value="<%=p.getProduct_price() %>">
-							<a class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1" onclick="callBack(<%=product_seq %>);">
+							<a class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1" onclick="callBack(<%=index %>);">
 								Quick View
 							</a>
 						</div>
@@ -157,7 +158,9 @@
 						</div>
 					</div>
 				</div>
-				<%} %>
+				<%
+				index += 1;	
+				} %>
 			</div>
 
 			<!-- Load more -->
