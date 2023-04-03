@@ -11,6 +11,7 @@ import com.som.controller.AnswerService;
 import com.som.controller.DeleteCart;
 import com.som.controller.DeleteService;
 import com.som.controller.GetProductDetail;
+import com.som.controller.HopeService;
 import com.som.controller.InquiryService;
 import com.som.controller.InsertCart;
 import com.som.controller.JoinService;
@@ -88,7 +89,9 @@ public class Frontcontroller extends HttpServlet {
 		}else if(result.equals("returnService.do")) {
 			// 반납 게시판
 			service = new returnService();
-		}
+		}else if(result.equals("HopeService.do")) {
+			// 희망상품 등록
+		} service = new HopeService();
 		
 		String moveURL = service.execute(request, response);
 		response.sendRedirect(moveURL);
