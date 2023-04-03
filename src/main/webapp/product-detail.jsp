@@ -1,3 +1,4 @@
+<%@page import="java.util.Random"%>
 <%@page import="com.som.model.UsersVO"%>
 <%@page import="com.som.model.ProductDAO"%>
 <%@page import="java.util.ArrayList"%>
@@ -463,28 +464,51 @@
 
 		<div class="bg6 flex-c-m flex-w size-302 m-t-73 p-tb-15">
 			<span class="stext-107 cl6 p-lr-25">
-				SKU: JAK-01
+				Product: <%=product_name %>
 			</span>
-
+			
 			<span class="stext-107 cl6 p-lr-25">
-				Categories: Jacket, Men
+				By. 송브레로 ( Songbrero ) 
 			</span>
 		</div>
 	</section>
 
 
+<!-- 추천 영역 시작 -->
+		<%
+			List<ProductVO> productList = p_dao.showProduct();
+			Random rd = new Random();
+			int[] r_list = new int[8];
+			List<ProductVO> suggestProductList = null;
+			
+			for(int i = 0; i<8; i++){
+				r_list[i] = rd.nextInt(productList.size());
+				
+				for(int k = 0; k<i; k++){
+					if(r_list[i] == r_list[k]){
+						i--;
+					}
+				}
+			}
+/* 			
+			for(int i=0; i<8; i++){
+				suggestProductList.add(productList[r_list[i]]);
+			} */
+		%>
 	<!-- Related Products -->
 	<section class="sec-relate-product bg0 p-t-45 p-b-105">
 		<div class="container">
 			<div class="p-b-45">
 				<h3 class="ltext-106 cl5 txt-center">
-					Related Products
+					<%=user_nick %>님을 위한 추천 상품
 				</h3>
 			</div>
 
 			<!-- Slide2 -->
 			<div class="wrap-slick2">
 				<div class="slick2">
+				
+<%-- 				<%for(ProductVO p : suggestProductList){ %>
 					<div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
 						<!-- Block2 -->
 						<div class="block2">
@@ -500,10 +524,11 @@
 								<div class="block2-txt-child1 flex-col-l ">
 									<a href="product-detail.jsp" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
 										Esprit Ruffle Shirt
+										<%=p.getProduct_name() %>
 									</a>
 
 									<span class="stext-105 cl3">
-										$16.64
+										<%=formatter.format(p.getProduct_price()) %>
 									</span>
 								</div>
 
@@ -516,7 +541,8 @@
 							</div>
 						</div>
 					</div>
-
+					<%} %> --%>
+					
 					<div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
 						<!-- Block2 -->
 						<div class="block2">

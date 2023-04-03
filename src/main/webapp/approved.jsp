@@ -196,7 +196,7 @@ function jusoCallBack(roadFullAddr,roadAddrPart1,addrDetail,roadAddrPart2,engAdd
 										<!-- readonly="readonly"  -->
 										<td class="column-3"><input type="text" id="approve_transfer_user" name="approve_transfer_user" placeholder="본인인증을 해주세요." value=""></td>
 										<td class="column-4">
-											<div onclick="check_onclick()" class="flex-c-m stext-101 cl2 size-119 bg8 bor13 hov-btn3 p-lr-15 trans-04 pointer m-tb-10">
+											<div onclick="check_onclick()" class="flex-c-m stext-101 cl2 size-119 bg8 bor13 hov-btn3 p-lr-15 trans-04 pointer m-tb-10" style="width: 220px;">
 												<button>본인인증</button>
 											</div>
 										</td>
@@ -219,7 +219,7 @@ function jusoCallBack(roadFullAddr,roadAddrPart1,addrDetail,roadAddrPart2,engAdd
 											<input type="text" id="zipNo" name="zipNo" readonly style="width:100px">
 										</td>
 										<td>
-											<div onclick="check_onclick()" class="flex-c-m stext-101 cl2 size-119 bg8 bor13 hov-btn3 p-lr-15 trans-04 pointer m-tb-10">
+											<div onclick="check_onclick()" class="flex-c-m stext-101 cl2 size-119 bg8 bor13 hov-btn3 p-lr-15 trans-04 pointer m-tb-10" style="width: 220px;">
 												<input type="button"  value="주소검색" onclick="goPopup();" style="background: none;">
 											</div>
 										</td>
@@ -235,6 +235,36 @@ function jusoCallBack(roadFullAddr,roadAddrPart1,addrDetail,roadAddrPart2,engAdd
 											<input type="text" id="roadAddrPart2" name="addr2"  style="width:40%" value="">
 										</td>
 									</tr>
+																		<!-- 약관 동의 -->
+									<tr>
+										<th class="column-1">약관 동의</th>
+										<td colspan="5">
+										<div id="agreeCheckArea">
+											<label for="agree_all" style="margin-top: 4px;">
+											  <input type="checkbox" name="agree_all" id="agree_all"  style="float: left; margin-top: 4px;">
+											  <span> &nbsp;모두 동의합니다</span>
+											</label>
+											
+											<p style="height: 6px;"></p>
+											<label for="agree">
+											  <input type="checkbox" name="agree" value="1" style="float: left; margin-top: 4px;">
+											  <span> &nbsp;이용약관 동의<strong>(필수)</strong></span>
+											</label>
+											<p style="height: 6px;"></p>
+											
+											<label for="agree">
+											  <input type="checkbox" name="agree" value="2" style="float: left; margin-top: 4px;">
+											  <span style="margin-top: 4px;"> &nbsp;개인정보 수집, 이용 동의<strong>(필수)</strong></span>
+											</label>
+											<p style="height: 6px;"></p>
+											
+											<label for="agree">
+											  <input type="checkbox" name="agree" value="3" style="float: left; margin-top: 4px;">
+											  <span style="margin-top: 4px;"> &nbsp;개인정보 이용 동의<strong>(필수)</strong></span>
+											</label>
+										</div>
+										</td>
+									</tr>
 									
 									<tr>
 										<td class="column-1"><span></span></td>
@@ -244,32 +274,9 @@ function jusoCallBack(roadFullAddr,roadAddrPart1,addrDetail,roadAddrPart2,engAdd
 											</div>
 										</td>
 										<td class="column-3">
-											<div class="flex-c-m stext-101 cl2 size-119 bg8 bor13 hov-btn3 p-lr-15 trans-04 pointer m-tb-10">
+											<div class="flex-c-m stext-101 cl2 size-119 bg8 bor13 hov-btn3 p-lr-15 trans-04 pointer m-tb-10" style="width: 220px;">
 												<button type="submit">제출하기</button>
 											</div>
-										</td>
-									</tr>
-																		<!-- 약관 동의 -->
-									<tr>
-										<td colspan="6">
-										<div id="agreeCheckArea">
-											<label for="agree_all">
-											  <input type="checkbox" name="agree_all" id="agree_all">
-											  <span>모두 동의합니다</span>
-											</label>
-											<label for="agree">
-											  <input type="checkbox" name="agree" value="1">
-											  <span>이용약관 동의<strong>(필수)</strong></span>
-											</label>
-											<label for="agree">
-											  <input type="checkbox" name="agree" value="2">
-											  <span>개인정보 수집, 이용 동의<strong>(필수)</strong></span>
-											</label>
-											<label for="agree">
-											  <input type="checkbox" name="agree" value="3">
-											  <span>개인정보 이용 동의<strong>(필수)</strong></span>
-											</label>
-										</div>
 										</td>
 									</tr>
 
@@ -304,7 +311,7 @@ function jusoCallBack(roadFullAddr,roadAddrPart1,addrDetail,roadAddrPart2,engAdd
 							</div>
 
 							<div class="size-209">
-								<span class="mtext-110 cl2">
+								<span class="mtext-110 cl2" id="totalPrice">
 									<%=total_price %>
 								</span>
 							</div>

@@ -22,7 +22,11 @@ function check_onclick(){
 IMP.init("imp34881717"); 
 function requestPay() {
 	theFrom=document.form;
+	// 결제 금액
+	var price = document.getElementById('totalPrice').innerText;
+	console.log(price);
 	
+	// 결제 임시로 임의의 값 넘김
 	theFrom.approve_number.value = "123412*********4";
 	theFrom.approve_card.value = "NH카드";
 	theFrom.approve_price.value = "10600";
