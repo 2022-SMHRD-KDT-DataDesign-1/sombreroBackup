@@ -72,7 +72,7 @@ function certification() {
   IMP.certification({ // param
     // 주문 번호
     pg:'PG사코드.{MIIiasTest}',//본인인증 설정이 2개이상 되어 있는 경우 필
-    merchant_uid: "ORD20180131-0000011", 
+    merchant_uid: "ORD20180131-0000012", 
     // 모바일환경에서 popup:false(기본값) 인 경우 필수
     m_redirect_url : "cart.jsp", 
     // PC환경에서는 popup 파라미터가 무시되고 항상 true 로 적용됨

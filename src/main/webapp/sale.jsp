@@ -70,7 +70,7 @@
 							<!-- 				<button id="imgBtn">사진 업로드</button> --> <input
 							type='file' accept="image/*" name='sale_photo' id="salePhotoID">
 						</th>
-						<td>이미지 파일 업로드 할 것..
+						<td>이미지 파일을 업로드 해주세요.
 							<div id="preview"></div>
 						</td>
 					</tr>
@@ -163,8 +163,12 @@
 					</tr>
 
 					<tr class="submitTr">
-						<td align="center" colspan="2"><input type="submit"
-							value="팔기 신청 완료"></td>
+					<td align="center" colspan="2">
+						<div class="flex-c-m stext-101 cl2 size-119 bg8 bor13 hov-btn3 p-lr-15 trans-04 pointer m-tb-10">
+							<!-- 결제 페이지로 이동 -->
+							<input type="submit" value="팔기 신청 완료" style="border: 0;background-color: transparent;">
+						</div>
+						</td>
 					</tr>
 
 

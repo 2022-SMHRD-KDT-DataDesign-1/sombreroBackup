@@ -46,4 +46,12 @@ public class UsersDAO {
 	   return loginUser;
    }  
    
+   public List<UsersVO> getReviewUser(int product_seq) {
+	   List<UsersVO> reviewUser= null;  
+	   SqlSession sqlSession = sqlSessionFactory.openSession(true);
+	   reviewUser = sqlSession.selectList("getReviewUser",product_seq);
+	   sqlSession.close();
+	   return reviewUser;
+   }  
+   
 }
