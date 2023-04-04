@@ -295,9 +295,7 @@
 			</div>
 			
 			<div class="header-cart-content flex-w js-pscroll">
-			<% if(user_nick != null && list.size()==0){ %>
-				<ul class="header-cart-wrapitem w-full"><%=user_nick %>님 반갑습니다.</ul>
-			<%}else if(user_seq == 0 || list.size()==0){ %>	
+			<% if(user_seq == 0 || list.size()==0){ %>
 				<ul class="header-cart-wrapitem w-full">로그인이 필요한 서비스입니다.</ul>
 			<% } else { %>
 					<%for(CartVO a: list) {
