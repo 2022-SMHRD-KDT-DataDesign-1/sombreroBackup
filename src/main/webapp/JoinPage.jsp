@@ -48,7 +48,6 @@ function jusoCallBack(roadFullAddr,roadAddrPart1,addrDetail,roadAddrPart2,engAdd
 				<div class="valid-text">
 					<p id="msg_userid" class="msg"></p>
 				</div>
-			</section>
 	<!-- 비밀번호 입력창 -->
 			<section class="sign-section passwd">
 				<ul class="input-box-wrap">
@@ -103,20 +102,22 @@ function jusoCallBack(roadFullAddr,roadAddrPart1,addrDetail,roadAddrPart2,engAdd
 						<input type="button"  value="주소검색" onclick="goPopup();">
 						</label>
 					</li>
+					
+					
 					<li class="input-box">
-						<label for="passwd2">도로명주소
-							<span><input type="text" id="roadAddrPart1" style="width:85%" name="addr1" value=""></span>
-							<input type="text" id="roadAddrPart11" style="width:85%" name="roadAddrPart11">
+						<label for="text">도로명주소
+							<span><input type="text" id="roadAddrPart1" name="addr1" style="width:70%" readonly="readonly" value=""></span>
+							<span><input type="text" id="roadAddrPart11" name="roadAddrPart11" readonly="readonly" value=""></span>
 						</label>
 					</li>
+					
 					<li class="input-box">
-						<label for="passwd2">상세주소
+						<label for="text">상세주소
 							<span><input type="text" id="addrDetail" name="addr3" style="width:40%" readonly="readonly" value=""></span>
 							<span><input type="text" id="roadAddrPart2" name="addr2"  style="width:40%" readonly="readonly" value=""></span>
 						</label>
 					</li>
 				</ul>	
-			</tr>
 			
 			</section>
 	<!-- 휴대폰번호 입력창 o-->

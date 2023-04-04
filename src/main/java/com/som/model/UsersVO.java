@@ -16,6 +16,11 @@ public class UsersVO {
 		super();
 	}
 	
+	public UsersVO(int user_seq) {
+		super();
+		this.user_seq = user_seq;
+	}
+
 	public UsersVO(String user_id, String user_pw) {
 		this.user_id = user_id;
 		this.user_pw = user_pw;

@@ -196,8 +196,8 @@ function jusoCallBack(roadFullAddr,roadAddrPart1,addrDetail,roadAddrPart2,engAdd
 										<!-- readonly="readonly"  -->
 										<td class="column-3"><input type="text" id="approve_transfer_user" name="approve_transfer_user" placeholder="본인인증을 해주세요." value=""></td>
 										<td class="column-4">
-											<div onclick="check_onclick()" class="flex-c-m stext-101 cl2 size-119 bg8 bor13 hov-btn3 p-lr-15 trans-04 pointer m-tb-10" style="width: 220px;">
-												<button>본인인증</button>
+											<div class="flex-c-m stext-101 cl2 size-119 bg8 bor13 hov-btn3 p-lr-15 trans-04 pointer m-tb-10" style="width: 220px;">
+												<a href="#" onclick="certification()">본인인증</a>
 											</div>
 										</td>
 									</tr>
@@ -340,7 +340,7 @@ function jusoCallBack(roadFullAddr,roadAddrPart1,addrDetail,roadAddrPart2,engAdd
 	</div>
 	
 	
-	<script type="text/javascript">
+<!-- 	<script type="text/javascript">
 	var checkUnload = true;
 	$(window).on("beforeunload", function(e){
 	    if(checkUnload) {
@@ -348,7 +348,7 @@ function jusoCallBack(roadFullAddr,roadAddrPart1,addrDetail,roadAddrPart2,engAdd
 	    	return "이 페이지를 벗어나면 작성된 내용은 저장되지 않습니다.";
 	    }
 	});
-	
+	 -->
 	// 단, 글쓰기 버튼을 클릭해서 글을 저장한 후 페이지를 이동할때도 저런 메시지가 뜨기 때문에, 
 	// 처리 완료 후 이동 시 checkUnload 값을 false 로 바꿔준 후 submit 이나 페이지를 이동해야 함
 	$("#saveBtn").on("click", function(){

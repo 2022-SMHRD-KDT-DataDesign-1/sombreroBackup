@@ -41,7 +41,7 @@ public class JoinService implements Command {
 		if(cnt>0) {
 			
 			System.out.println("회원가입 성공");
-			moveURL = "joinSuccess.jsp?user_id="+user_id+"&user_name="+user_name ;
+			moveURL = "joinSuccess.jsp";
 			
 		}else {
 			System.out.println("회원가입 실패");

@@ -23,5 +23,6 @@
   	<select id="login" parameterType="UsersVO" resultType="UsersVO">
   		select * from t_users where user_id=#{user_id} and user_pw=#{user_pw}
   	</select>
+  	<select id="getReviewUser" parameterType="int" resultType="UsersVO"> SELECT user_seq FROM t_rentals r, t_orders o where o.order_seq=r.order_seq and product_seq=#{product_seq} </select>
   	
 </mapper>

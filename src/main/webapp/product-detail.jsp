@@ -1,3 +1,4 @@
+<%@page import="com.som.model.UsersDAO"%>
 <%@page import="java.util.Random"%>
 <%@page import="com.som.model.UsersVO"%>
 <%@page import="com.som.model.ProductDAO"%>
@@ -342,10 +343,10 @@
 									<div class="p-b-30 m-lr-15-sm">
 										<!-- Review -->
 										<%
-										ArrayList<Integer> user_seq_list = new ArrayList<>();
+										List<UsersVO> user_seq_list = new ArrayList<>();
+										user_seq_list = new UsersDAO().getReviewUser(product_seq);
 										for(ReviewVO re: rev_info){
 										int rev_num = re.getReview_check();
-										user_seq_list.add(re.getUser_seq());
 										%>
 										<div class="flex-w flex-t p-b-68">
 											<div class="wrap-pic-s size-109 bor0 of-hidden m-r-18 m-t-6">
@@ -425,7 +426,18 @@
 													<input name="filename" type="file">
 												</div>
 												<%
-												boolean isExists = user_seq_list.contains(user_seq);
+												int[] seqCheck = new int[user_seq_list.size()];
+												for(int i = 0;i<user_seq_list.size();i++){
+													seqCheck[i]=user_seq_list.get(i).getUser_seq();
+												}
+												
+												boolean isExists = false;
+												
+												 for (int num : seqCheck) {
+											         if (num == user_seq)
+											        	 isExists = true;
+											      }
+												
 												if(isExists){
 												%>
 												
