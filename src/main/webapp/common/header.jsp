@@ -303,11 +303,13 @@
 						product_quantity = a.getCart_quantity();
 						product_period = a.getCart_period();
 						total_price += product_price*product_quantity*(product_period/7);
+						String[] photo_path = a.getPhoto_path().split(";");
+						System.out.println("ccccccc:" + photo_path[0]);
 					 %>
 				<ul class="header-cart-wrapitem w-full">
 					<li class="header-cart-item flex-w flex-t m-b-12">
 						<div class="header-cart-item-img">
-							<img src="images/item-cart-01.jpg" alt="IMG">
+							<img src="<%=photo_path[0] %>" alt="IMG">
 						</div>
 						<div class="header-cart-item-txt p-t-8">
 							<a href="#" class="header-cart-item-name m-b-18 hov-cl1 trans-04">
