@@ -50,26 +50,6 @@
 <script src="http://code.jquery.com/jquery-3.1.0.js"></script>
 </head>
 <body class="animsition">
-	<!-- Header -->
-	<!-- breadcrumb -->
-	<div class="container">
-		<div class="bread-crumb flex-w p-l-25 p-r-15 p-t-30 p-lr-0-lg">
-			<a href="index.jsp" class="stext-109 cl8 hov-cl1 trans-04">
-				Home
-				<i class="fa fa-angle-right m-l-9 m-r-10" aria-hidden="true"></i>
-			</a>
-
-			<a href="product.jsp" class="stext-109 cl8 hov-cl1 trans-04">
-				Men
-				<i class="fa fa-angle-right m-l-9 m-r-10" aria-hidden="true"></i>
-			</a>
-
-			<span class="stext-109 cl4">
-				Lightweight Jacket
-			</span>
-		</div>
-	</div>
-	
 	<!--상품 정보 가져오기 -->
 	<%
 	
@@ -92,6 +72,26 @@
 		p_photo = vo.getPhoto_path().split(";");
 		product_price = vo.getProduct_price();
 	%>
+	
+	<!-- Header -->
+	<!-- breadcrumb -->
+	<div class="container">
+		<div class="bread-crumb flex-w p-l-25 p-r-15 p-t-30 p-lr-0-lg">
+			<a href="index.jsp" class="stext-109 cl8 hov-cl1 trans-04">
+				일생일대
+				<i class="fa fa-angle-right m-l-9 m-r-10" aria-hidden="true"></i>
+			</a>
+
+			<a href="product.jsp" class="stext-109 cl8 hov-cl1 trans-04">
+				상품
+				<i class="fa fa-angle-right m-l-9 m-r-10" aria-hidden="true"></i>
+			</a>
+
+			<span class="stext-109 cl4">
+				<%=product_name %>
+			</span>
+		</div>
+	</div>
 	
 	<!-- Product Detail -->
 	<section class="sec-product-detail bg0 p-t-65 p-b-60">

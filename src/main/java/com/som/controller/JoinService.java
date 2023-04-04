@@ -34,7 +34,7 @@ public class JoinService implements Command {
 		String user_phone = request.getParameter("user_phone");
 		System.out.println(user_phone);
 		
-		UsersVO vo = new UsersVO(user_id,user_pw,user_name,user_address,user_nick,user_phone);
+		UsersVO vo = new UsersVO(user_id,user_pw,user_name,user_nick,user_address,user_phone);
 		UsersDAO dao = new UsersDAO();
 		int cnt = dao.insertUser(vo);
 		
