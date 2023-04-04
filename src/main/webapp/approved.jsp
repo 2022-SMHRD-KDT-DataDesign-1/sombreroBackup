@@ -219,7 +219,7 @@ function jusoCallBack(roadFullAddr,roadAddrPart1,addrDetail,roadAddrPart2,engAdd
 											<input type="text" id="zipNo" name="zipNo" readonly style="width:100px">
 										</td>
 										<td>
-											<div onclick="check_onclick()" class="flex-c-m stext-101 cl2 size-119 bg8 bor13 hov-btn3 p-lr-15 trans-04 pointer m-tb-10" style="width: 220px;">
+											<div class="flex-c-m stext-101 cl2 size-119 bg8 bor13 hov-btn3 p-lr-15 trans-04 pointer m-tb-10" style="width: 220px;">
 												<input type="button"  value="주소검색" onclick="goPopup();" style="background: none;">
 											</div>
 										</td>
@@ -348,14 +348,14 @@ function jusoCallBack(roadFullAddr,roadAddrPart1,addrDetail,roadAddrPart2,engAdd
 	    	return "이 페이지를 벗어나면 작성된 내용은 저장되지 않습니다.";
 	    }
 	});
-	 -->
+	
 	// 단, 글쓰기 버튼을 클릭해서 글을 저장한 후 페이지를 이동할때도 저런 메시지가 뜨기 때문에, 
 	// 처리 완료 후 이동 시 checkUnload 값을 false 로 바꿔준 후 submit 이나 페이지를 이동해야 함
 	$("#saveBtn").on("click", function(){
 	    checkUnload = false;
 	    $("#saveForm").submit();
 	});
-	</script>
+	</script> -->
 <!--===============================================================================================-->	
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
